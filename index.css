@@ -1,0 +1,616 @@
+
+#navItem1 {
+    background-image: linear-gradient(to left ,rgb(248, 2, 228), #0a1111, #0a1616);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 10px;
+    font-family:"Roboto";
+    font-weight: bold;
+}
+
+#navItem2 {
+    background-image: linear-gradient(to right ,rgb(247, 6, 206), #0a1111, #0a1616);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 10px;
+    font-family:"Roboto";
+    font-weight: bold;
+}
+
+#navItem3 {
+    background-image: linear-gradient(to left ,rgb(250, 8, 238), #0a1111, #0a1616);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 10px;
+    font-family:"Roboto";
+    font-weight: bold;
+}
+
+#navItem5 {
+    background-image: linear-gradient(to left ,rgb(255, 32, 181), #0a1111, #0a1616);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 10px;
+    font-family:"Roboto";
+    font-weight: bold;
+    
+}
+
+
+#navItem4 {
+    background-image: linear-gradient(to left ,rgb(255, 32, 181), #0a1111, #0a1616);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 10px;
+    font-family:"Roboto";
+    font-weight: bold;
+    
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff7300; }
+    50% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00; }
+    100% { text-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 15px #00f0ff; }
+}
+@keyframes slide {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+.span-name {
+    font-size:40px;
+    font-weight: bold;
+    background-image: linear-gradient( to left, #e1ecec, #f0f7fa);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    animation: glow 2s infinite alternate, slide 1s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+@keyframes slideText {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+#navItem1:hover {
+    color: white;
+    background-color: black;
+    margin-bottom: 3px;
+    font-family: "Roboto";
+    padding-left: 10px;
+    border-radius: 20px;
+    text-decoration: underline rgb(252, 249, 249) 2px;
+    animation: slideText 0.5s ease-in-out;
+
+}
+
+@keyframes slideText {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+#navItem5:hover {
+    color: white;
+    background-color: black;
+    margin-bottom: 3px;
+    font-family: "Roboto";
+    padding-left: 10px;
+    border-radius: 20px;
+    text-decoration: underline rgb(252, 249, 249) 2px;
+    animation: slideText 0.5s ease-in-out;
+
+}
+
+@keyframes slideText {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+#navItem2:hover {
+    color: white;
+    background-color: black;
+    margin-bottom: 3px;
+    font-family: "Roboto";
+    padding-left: 10px;
+    border-radius: 20px;
+    text-decoration: underline rgb(252, 249, 249) 2px;
+    animation: slideText 0.5s ease-in-out;
+
+}
+
+@keyframes slideText {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+#navItem3:hover {
+    color: white;
+    background-color: black;
+    margin-bottom: 3px;
+    font-family: "Roboto";
+    padding-left: 10px;
+    border-radius: 20px;
+    text-decoration: underline rgb(252, 249, 249) 2px;
+    animation: slideText 0.5s ease-in-out;
+}
+
+@keyframes slideText {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+#navItem4:hover {
+    color: white;
+    background-color: black;
+    margin-bottom: 3px;
+    font-family: "Roboto";
+    padding-left: 10px;
+    border-radius: 20px;
+    text-decoration: underline rgb(252, 249, 249) 2px;
+    animation: slideText 0.5s ease-in-out;
+}
+
+
+
+.navbar-bg{
+    background-image: linear-gradient(to right,rgb(18, 51, 65),#17d3f5);
+}
+
+.my-logo{
+    width: 80px;
+    height: 70px;
+    border-radius: 100px;
+    background-size: cover;
+    display: inline;
+}
+
+.name {
+    display: inline;
+    background-image: linear-gradient( to left, #e1ecec, #07b0f8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+}
+
+.bg-container1 {
+    background-image: url(picture5.jpg);
+    background-size: cover;
+    padding-bottom:5%;
+    color: white;
+    text-align: center;
+   
+}
+
+
+@keyframes slideText {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+.contiainer-animation ,.my-profile{
+    animation: slideText 2.5s ease-in-out;
+}
+
+
+
+
+
+
+.home-heading {
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 50%;
+    background-image: linear-gradient( to left, rgb(245, 24, 24),#e1ecec, #a6e1fa);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+
+.my-profile {
+    margin-top: 30%;
+    margin-right: 10%;
+    height: 50%;
+    width:50%;
+    position: relative;
+    border: #17d3f5 solid 3px;
+    border-radius: 50%;
+    background-size: cover;
+    
+}
+
+.bg-container2 {
+    background-image: linear-gradient(to left,#BBD2C5,#536976,#292E49);
+    color: white;
+    text-align: center;
+    
+}
+
+@keyframes slideText {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+.bg-container1:hover{
+    animation: slideText 0.5s ease-in-out;
+}
+
+@keyframes slideText {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+.bg-container2:hover{
+    animation: slideText 0.5s ease-in-out;
+}
+
+.about-me-profile {
+    margin-top: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    height: 40%;
+    width:50%;
+    position: relative;
+    border: #BBD2C5 solid 3px;
+    border-radius: 50%;
+    background-size: cover;
+    -bottom: 10%;
+}
+
+.about-me-heading {
+    background: linear-gradient(90deg, #ff7eb3, #f7f2f2, #181617, #ff758c);
+    text-decoration: solid underline 3px #f7f2f2 ;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 40px;
+    font-family:  "sans-serif";
+    font-weight: bold;
+    text-align: left;
+    padding-right: 20%;
+    padding-top: 30%;
+}
+
+.about-me-paragraph {
+    text-align: left;
+    padding-right: 20%;
+    font-family: 'Lora', serif;
+    font-weight:bold;
+    font-size:90%;
+}
+
+.span-words{
+    background-image: linear-gradient( to left, rgb(245, 24, 24),#0a080a, #090a0a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-container3 {
+    background-image:url(picture6.jpg);
+    background-size:cover;
+    
+    color: white;
+    text-align: center;
+}
+
+@keyframes slideText {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+.bg-container3:hover{
+    animation: slideText 0.5s ease-in-out;
+}
+
+.education-profile {
+    margin-top: 30%;
+    margin-right: 20%;
+    height: 60%;
+    width:70%;
+    position: relative;
+    border: #ff05ac solid 3px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-bottom: 10%;
+}
+
+.education-paragraph {
+    text-align: left;
+    padding-right: 20%;
+    font-family: 'Lora', serif;
+    font-weight:bold;
+    color: #c5d1f3;
+    font-size:90%;
+}
+
+.education-main-heading {
+    background: linear-gradient(90deg, #ff7eb3, #f7f2f2, #ebdce3, #ff758c);
+    text-decoration: solid underline 3px #f7f2f2 ;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-family:  "sans-serif";
+    font-weight: bold;
+    text-align: center;
+    padding-left: 70%;
+    padding-top:30px;
+}
+
+
+.education-side-heading {
+    background-image: linear-gradient( to right, rgb(245, 24, 24),#d436d4, #f1e42c);
+    background-clip: text;
+    font-size:20px;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+}
+
+.bg-container4 {
+    background:linear-gradient(to left,#780206,#061161);
+    background-size:cover;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+@keyframes slideText {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+.bg-container4:hover{
+    animation: slideText 0.5s ease-in-out;
+}
+
+.project-main-heading {
+    background: linear-gradient(90deg, #ff7eb3, #f7f2f2, #fa0276, #ff758c);
+    text-decoration: solid underline 3px #f7f2f2 ;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:  "sans-serif";
+    font-weight: bold;
+    text-align: center;
+    padding-top:30px;
+}
+
+.project-card {
+    padding: 10px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    margin: 10px;
+    border-radius: 16px;
+}
+
+.project-card:hover {
+    background: linear-gradient(to left,#FEAC5E,#C779D0,#4bc0c8);
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    cursor: pointer;
+
+}
+
+
+.project-card-image {
+    width: 87px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.project-card-title {
+    color: #323f4b;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.project-card-description:hover{
+    color: white;
+}
+
+.project-card-description {
+    text-align: left;
+    font-weight:bold;
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.project-card-link {
+    text-align: left;
+    padding-bottom: 10px;
+    background-image: linear-gradient( to right, rgb(245, 24, 24),#d436d4, #141412);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: black 2px ;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bg-container5 {
+    background-image: url(picture2.jpg);
+    background-size: cover;
+    padding-bottom:2%;
+    background-size:cover;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+@keyframes slideText {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+.bg-container5:hover{
+    animation: slideText 0.5s ease-in-out;
+}
+
+
+.skill-card {
+    background-color: white;
+    margin-top: 5%;
+    text-align: left;
+    border-radius:40px;
+    margin-right: 10%;
+    padding: 5%;
+    border:solid 3px black;
+}
+
+
+.skill-card:hover{
+    border: solid 3px #89fffd;
+    background-image: linear-gradient(to right,#ef32d9,#89fffd);
+}
+
+.skill-main-heading {
+    background: linear-gradient(90deg, #ff7eb3, #f7f2f2, #fa0276, #ff758c);
+    text-decoration: solid underline 3px #f7f2f2 ;
+    background-clip: text;
+    font-size: 50px;
+    -webkit-text-fill-color: transparent;
+    font-family:  "sans-serif";
+    font-weight: bold;
+    text-align: center;
+    padding-top:30px;
+}
+
+.skill-side-heading {
+    background-image: linear-gradient( to right, rgb(245, 24, 24),#d436d4, #16150b,rgb(246, 250, 6));
+    background-clip: text;
+    font-size:30px;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+ul{
+    color:gray;
+    font-weight: bold;
+    font-size:18px;
+    text-align: left;
+    list-style-type:"$. ";
+}
+
+ul:hover{
+    color: white;
+}
+
+.footer-section {
+    background-color: #0d2436;
+}
+
+.thank-section-mail-id {
+    color: #959ead;
+    display: block;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.thank-section-contact{
+    color: #959ead;
+    display: inline-block;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.Developer-id {
+    color:#959ead ;
+    background-color:transparent;
+    font-family: "Bree Serif";
+    border-radius: 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    padding-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 10px;
+}
+
+.Developer-id-2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.thanking-image{
+    height: 150px;
+    width:150px;
+    border-radius: 100px;
+    background-size:cover ;
+}
+.my-image {
+    height: 150px;
+    width:150px;
+    border-radius: 100px;
+    background-size:cover ;
+}
+
+.thank-section-gratefull {
+    background-image: linear-gradient( to left, #e1ecec, #07b0f8);
+    background-clip: text;
+    font-size: 30px;
+    padding-top: 10px;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bg-container6 {
+    background-image: url(picture2.jpg);
+    background-size: cover;
+    padding-bottom:2%;
+    background-size:cover;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+@keyframes slideText {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+.bg-container5:hover{
+    animation: slideText 0.5s ease-in-out;
+}
+
+.download-button {
+    background-image: linear-gradient( to left, #e1ecec, #07b0f8);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.download-button:hover {
+    background: linear-gradient(90deg, #ff7eb3, #f7f2f2, #fa0276, #ff758c);
+    color: white;
+    font-weight: bold;
+}
