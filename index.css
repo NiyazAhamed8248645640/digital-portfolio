@@ -427,7 +427,10 @@
 
 .project-card-link {
     text-align: left;
-    padding-bottom: 10px;
+    background-color:transparent;
+    border:solid black 2px ;
+    padding:10px;
+    margin-bottom: 10px;
     background-image: linear-gradient( to right, rgb(245, 24, 24),#d436d4, #141412);
     background-clip: text;
     -webkit-text-fill-color: transparent;
