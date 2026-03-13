@@ -1,0 +1,403 @@
+/* =========================================================================
+   Global Variables & Fundamentals
+   ========================================================================= */
+   :root {
+    --primary-bg: #050814;
+    --glass-bg: rgba(13, 22, 38, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --cyan: #07b0f8;
+    --cyan-glow: rgba(7, 176, 248, 0.6);
+    --purple: #b624ff;
+    --purple-glow: rgba(182, 36, 255, 0.6);
+    --text-main: #ffffff;
+    --text-muted: #a0aec0;
+    --nav-height: 80px;
+    --card-bg: rgba(20, 30, 50, 0.5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+/* Base Utilities */
+.text-cyan { color: var(--cyan) !important; }
+.text-purple { color: var(--purple) !important; }
+.text-light-gray { color: var(--text-muted) !important; }
+.section-padding { padding-top: 100px; padding-bottom: 100px; }
+.content-section { z-index: 10; padding-top: var(--nav-height); }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--primary-bg); }
+::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, var(--cyan), var(--purple)); border-radius: 5px; }
+
+/* =========================================================================
+   Massive Background Setup
+   ========================================================================= */
+.global-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Behind all content */
+    pointer-events: none; /* Let clicks pass through to content */
+}
+
+/* =========================================================================
+   Glassmorphism System
+   ========================================================================= */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border-left-width: 3px;
+    border-left-style: solid #07b0f8;
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* =========================================================================
+   Navigation Bar
+   ========================================================================= */
+.glass-nav {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: all 0.4s ease;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.glass-nav.scrolled {
+    background: rgba(5, 8, 20, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 10px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.my-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--cyan);
+    box-shadow: 0 0 10px var(--cyan-glow);
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .my-logo { transform: scale(1.1) rotate(5deg); }
+
+.brand-name {
+    font-size: 1.4rem;
+    background: linear-gradient(90deg, #fff, var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+
+.nav-hover {
+    color: var(--text-main) !important;
+    font-weight: 600;
+    margin: 0 10px;
+    position: relative;
+    padding: 5px 0 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-hover::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--cyan), var(--purple));
+    transition: width 0.3s ease;
+}
+
+.nav-hover:hover { color: var(--cyan) !important; }
+.nav-hover:hover::after { width: 100%; }
+.custom-toggler { border: 1px solid var(--cyan); padding: 5px 10px; border-radius: 8px; }
+
+/* =========================================================================
+   Hero Section
+   ========================================================================= */
+.hero-greeting { font-size: 1.5rem; font-weight: 600; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+.hero-title { font-size: 3.5rem; font-weight: 800; line-height: 1.2; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+.hero-subtitle { font-size: 1.2rem; font-weight: 300; max-width: 500px;font-weight: bold; }
+
+.neon-text {
+    background: linear-gradient(90deg, var(--cyan), #fff, var(--purple));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine { to { background-position: 200% center; } }
+
+.profile-img-container { position: relative; width: 100%; max-width: 400px; margin: 0 auto; }
+
+.hero-profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+    border: 3px solid rgba(255,255,255,0.1);
+}
+
+.circle-decoration {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110%;
+    height: 110%;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, transparent 0%, var(--cyan) 25%, transparent 50%, var(--purple) 75%, transparent 100%);
+    animation: rotate-gradient 10s linear infinite;
+    z-index: 1;
+    filter: blur(20px);
+    opacity: 0.6;
+}
+
+@keyframes rotate-gradient { 100% { transform: translate(-50%, -50%) rotate(360deg); } }
+
+.floating-anim { animation: floating 6s ease-in-out infinite; }
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); box-shadow: 0 15px 35px rgba(7, 176, 248, 0.4); }
+    100% { transform: translateY(0px); }
+}
+
+/* =========================================================================
+   Buttons
+   ========================================================================= */
+.cyber-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 30px;
+    background: rgba(7, 176, 248, 0.1);
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(7, 176, 248, 0.2);
+}
+
+.cyber-btn::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.cyber-btn:hover { background: var(--cyan); color: #fff; box-shadow: 0 0 30px var(--cyan-glow); transform: translateY(-3px); }
+.cyber-btn:hover::before { left: 100%; }
+.cyber-btn:hover .btn-icon { transform: translateY(3px); }
+
+.cyber-btn-purple { color: var(--purple); border-color: var(--purple); background: rgba(182, 36, 255, 0.1); box-shadow: 0 0 15px rgba(182, 36, 255, 0.2); }
+.cyber-btn-purple:hover { background: var(--purple); box-shadow: 0 0 30px var(--purple-glow); }
+
+/* =========================================================================
+   About Me Section
+   ========================================================================= */
+.section-title { font-size: 2.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; }
+.about-profile-img { width: 80%; max-width: 300px; border: 4px solid var(--glass-border); transition: transform 0.4s ease; }
+.about-profile-img:hover { transform: scale(1.05) rotate(-3deg); }
+.shadow-neon { box-shadow: 0 0 30px var(--cyan-glow), inset 0 0 20px rgba(255,255,255,0.1); }
+.about-text p { font-size: 1.1rem; line-height: 1.8; color: #cbd5e1; }
+.highlight-text { color: #fff; font-weight: 600; text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+
+/* =========================================================================
+   Education Section
+   ========================================================================= */
+.education-card { border-left: 4px solid var(--cyan);margin-bottom: 10px; }
+.glow-orb {
+    position: absolute;
+    top: -50px; right: -50px;
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--purple-glow) 0%, transparent 70%);
+    filter: blur(20px);
+    z-index: 0;
+}
+.edu-degree { font-size: 1.8rem; font-weight: 800; position: relative; z-index: 1; }
+.edu-college { font-size: 1.2rem; position: relative; z-index: 1; border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; }
+.edu-desc { font-size: 1.1rem; line-height: 1.6; position: relative; z-index: 1; }
+.education-img { width: 100%; max-width: 400px;height: 700px; border: 2px solid var(--glass-border); filter: grayscale(20%); transition: all 0.5s ease; border-radius: 10px;}
+.education-img:hover { filter: grayscale(0%); transform: scale(1.02); }
+.shadow-neon-purple { box-shadow: 0 0 40px var(--purple-glow); }
+
+/* =========================================================================
+   Projects Section - Impressive Cards
+   ========================================================================= */
+.project-card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: #07b0f8;
+}
+
+.project-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 20px var(--cyan-glow);
+    border-color: rgba(7, 176, 248, 0.5);
+}
+
+.project-img-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.project-card:hover .project-img { transform: scale(1.1); }
+
+.project-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(5, 8, 20, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay { opacity: 1; }
+
+.overlay-btn {
+    width: 50px; height: 50px;
+    background: var(--cyan);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.project-card:hover .overlay-btn { transform: translateY(0); }
+.overlay-btn:hover { background: #fff; color: var(--cyan); box-shadow: 0 0 15px #fff; }
+
+.project-title { font-size: 1.5rem; font-weight: 700; }
+.project-desc { font-size: 1rem; line-height: 1.5; margin-bottom: 20px; }
+
+.cyber-link {
+    color: var(--cyan);
+    font-weight: 600;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.cyber-link i { transition: transform 0.3s ease; }
+.cyber-link:hover { color: #fff; }
+.cyber-link:hover i { transform: translateX(5px); }
+
+/* =========================================================================
+   Skills Section
+   ========================================================================= */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    border-left-width: solid 3px rgb(89, 142, 223);
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-badge {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--glass-border);
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-badge:hover {
+    background: rgba(182, 36, 255, 0.2);
+    border-color: var(--purple);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3), 0 0 15px var(--purple-glow);
+    color: #fff;
+}
+
+.skill-icon { font-size: 1.5rem; color: var(--cyan); transition: color 0.3s ease; }
+.skill-badge:hover .skill-icon { color: #fff; }
+
+/* =========================================================================
+   Footer
+   ========================================================================= */
+.glass-footer {
+    background: rgba(2, 4, 10, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid var(--glass-border);
+}
+
+.footer-my-img { width: 80px; height: 80px; object-fit: cover; border-width: 3px !important; }
+.border-cyan { border: 2px solid var(--cyan); }
+.border-purple { border: 2px solid var(--purple); }
+.footer-thanking-img { width: 100px; height: 100px; object-fit: cover; }
+.contact-list li { font-size: 1.1rem; }
+.quote-text { line-height: 1.6; color: #94a3b8; }
+
+/* =========================================================================
+   Responsive Adjustments
+   ========================================================================= */
+@media (max-width: 768px) {
+    .hero-title { font-size: 2.5rem; }
+    .hero-greeting { font-size: 1.2rem; }
+    .hero-profile-img { width: 80%; }
+    .section-title { font-size: 2rem; }
+    .education-card { padding: 30px !important; }
+    .edu-degree { font-size: 1.4rem; }
+}

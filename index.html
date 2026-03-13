@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niyaz Ahamed - Portfolio</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+
+    <!-- Three.js (Required for Vanta) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- Vanta.js Network Animation -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+</head>
+
+<body>
+    <!-- Global Animated Background Container -->
+    <div id="vanta-bg" class="global-bg"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="myself.png" class="my-logo mr-3" alt="Niyaz Logo" />
+                <span class="brand-name font-weight-bold">Niyaz Ahamed</span>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link nav-hover" href="#homeSection">Home</a>
+                    <a class="nav-link nav-hover" href="#aboutMeSection">About</a>
+                    <a class="nav-link nav-hover" href="#educationSection">Education</a>
+                    <a class="nav-link nav-hover" href="#projectsSection">Projects</a>
+                    <a class="nav-link nav-hover" href="#skillSection">Skills</a>
+                    <a class="nav-link nav-hover" href="#contactSection">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="min-vh-100 d-flex align-items-center position-relative content-section pt-5" id="homeSection">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 order-2 order-md-1" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="hero-content">
+                        <h2 class="hero-greeting text-cyan mb-2">Hello World!</h2>
+                        <h1 class="hero-title mb-4">
+                            Welcome to my portfolio!<br>
+                            I am <span class="neon-text glow-pulse">Niyaz Ahamed</span>
+                        </h1>
+                        <p class="hero-subtitle mb-5 text-light-gray">Explore my work, skills, and innovations in Full-Stack Development.</p>
+                        <a href="resume-1.pdf" target="_blank" class="cyber-btn mt-3">
+                            <span class="btn-text">Download CV</span>
+                            <i class="fas fa-download ml-2 btn-icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-1 order-md-2 mb-5 mb-md-0" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+                    <div class="profile-img-container d-flex justify-content-center justify-content-md-end">
+                        <img src="myself2.png" class="hero-profile-img floating-anim" alt="Niyaz Ahamed Profile" />
+                        <div class="circle-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="min-vh-100 d-flex align-items-center position-relative content-section section-padding py-5" id="aboutMeSection">
+        <div class="container">
+            <div class="row align-items-center glass-panel p-4 p-md-5 rounded-4" data-aos="fade-up" data-aos-duration="1200">
+                <div class="col-12 col-md-5 mb-4 mb-md-0 d-flex justify-content-center" data-aos="fade-right" data-aos-delay="300">
+                    <img src="myself.png" class="about-profile-img rounded-circle shadow-neon" alt="About Me" />
+                </div>
+                <div class="col-12 col-md-7" data-aos="fade-left" data-aos-delay="400">
+                    <h2 class="section-title mb-4">About <span class="text-cyan">Me</span></h2>
+                    <div class="about-text">
+                        <p>I’m a <span class="highlight-text">FullStack-Developer</span> and UG 2nd-year student at <span class="highlight-text">Government Arts and Science College, Gudalur</span>.</p>
+                        <p>Currently pursuing advanced <span class="highlight-text">Full-Stack Web Development</span> at NxtWave. Their industry-focused curriculum and expert-led workshops have been instrumental in my growth.</p>
+                        <p>Driven by curiosity and hard work, I continuously upskill. I’ve completed multiple projects and earned certifications.</p>
+                        <p class="font-weight-bold text-cyan mt-4">Passionate about coding, learning, and building the future—one line at a time! 🚀💻</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="min-vh-100 d-flex align-items-center position-relative content-section section-padding py-5" id="educationSection">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-down">My <span class="text-purple">Education</span></h2>
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-7 mb-5 mb-lg-0" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="education-card glass-panel p-5 rounded-4 position-relative overflow-hidden">
+                        <div class="glow-orb"></div>
+                        <h3 class="edu-degree text-cyan mb-3"><i class="fas fa-graduation-cap mr-2"></i>Bachelor’s Degree in Computer Science</h3>
+                        <h5 class="edu-college text-white mb-4">Government Arts and Science College, Gudalur (UG 3nd Year)</h5>
+                        <p class="edu-desc text-light-gray">
+                            I am currently building a strong foundation in programming, algorithms, and problem-solving. My coursework covers essential subjects like Data Structures, Object-Oriented Programming, Databases, and Web Technologies.
+                        </p>
+                    </div>
+                    <div class="education-card glass-panel p-5 rounded-4 position-relative overflow-hidden">
+                        <div class="glow-orb"></div>
+                        <h3 class="edu-degree text-cyan mb-3"><i class="fas fa-graduation-cap mr-2"></i>Education & Certification: NxtWave Intensive (CCBP 4.0)</h3>
+                        <h5 class="edu-college text-white mb-4">Currently pursuing the Full-Stack Development Course in 4.0 Technologies</h5>
+                        <p class="edu-desc text-light-gray">
+Building scalable web architecture at NxtWave’s CCBP 4.0 Academy. Mastering the MERN Stack and Python through an elite, project-first curriculum designed by IIT/IIIT alumni.                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="edu-img-wrapper">
+                        <img src="picture2.jpg" class="education-img rounded-4 shadow-neon-purple" alt="Education" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="min-vh-100 position-relative content-section section-padding py-5" id="projectsSection">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-down">Featured <span class="text-cyan">Projects</span></h2>
+            
+            <div class="row mt-4">
+                <!-- Project 1 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card glass-panel h-100 d-flex flex-column">
+                        <div class="project-img-container">
+                            <img src="food-munch-img.png" class="project-img" alt="Fresh Food Project" />
+                            <div class="project-overlay">
+                                <a href="https://niyaz21.ccbp.tech/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="project-title text-white">Fresh Food</h3>
+                            <p class="project-desc text-light-gray flex-grow-1">Provides fresh-cut fruits and vegetables directly picked from partner farms so you always get them tree to plate.</p>
+                            <a href="https://niyaz21.ccbp.tech/" target="_blank" class="cyber-link mt-3 mt-auto">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card glass-panel h-100 d-flex flex-column">
+                        <div class="project-img-container">
+                            <img src="artifial intellegence.avif" class="project-img" alt="Gen AI Project" />
+                            <div class="project-overlay">
+                                <a href="https://niyaz23.ccbp.tech/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="project-title text-white">Gen AI Chatbot</h3>
+                            <p class="project-desc text-light-gray flex-grow-1">An advanced AI chatbot designed to provide intelligent, dynamic, and context-aware conversations leveraging ML.</p>
+                            <a href="https://niyaz23.ccbp.tech/" target="_blank" class="cyber-link mt-3 mt-auto">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card glass-panel h-100 d-flex flex-column">
+                        <div class="project-img-container">
+                            <img src="wikipedia's.jpg" class="project-img" alt="Wikipedia Clone" />
+                            <div class="project-overlay">
+                                <a href="https://niyaz105.ccbp.tech/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="project-title text-white">Wikipedia Clone</h3>
+                            <p class="project-desc text-light-gray flex-grow-1">A dynamic knowledge-sharing platform that replicates core functionalities with a seamless user interface.</p>
+                            <a href="https://niyaz105.ccbp.tech/" target="_blank" class="cyber-link mt-3 mt-auto">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Project 4 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card glass-panel h-100 d-flex flex-column">
+                        <div class="project-img-container">
+                            <img src="countries search.jpg" class="project-img" alt="Geo Find" />
+                            <div class="project-overlay">
+                                <a href="https://niyaz106.ccbp.tech/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="project-title text-white">Geo Find</h3>
+                            <p class="project-desc text-light-gray flex-grow-1">Dynamic web platform allowing users to search countries effortlessly and discover key cultural and geographic details.</p>
+                            <a href="https://niyaz106.ccbp.tech/" target="_blank" class="cyber-link mt-3 mt-auto">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card glass-panel h-100 d-flex flex-column">
+                        <div class="project-img-container">
+                            <img src="nature.jpg" class="project-img" alt="Theme Changer" />
+                            <div class="project-overlay">
+                                <a href="https://niyaz103.ccbp.tech/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="project-title text-white">Smart Background Theme</h3>
+                            <p class="project-desc text-light-gray flex-grow-1">A theme changer that dynamically adapts backgrounds based on user preferences or time of day.</p>
+                            <a href="https://niyaz103.ccbp.tech/" target="_blank" class="cyber-link mt-3 mt-auto">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-card glass-panel h-100 d-flex flex-column">
+                        <div class="project-img-container">
+                            <img src="boomb.jfif" class="project-img" alt="Bomb Defuse" />
+                            <div class="project-overlay">
+                                <a href="https://niyaz101.ccbp.tech/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="project-title text-white">Bomb Defusal System</h3>
+                            <p class="project-desc text-light-gray flex-grow-1">A high-stakes time bomb defusal simulator utilizing logical algorithms to prevent disaster in real-time.</p>
+                            <a href="https://niyaz101.ccbp.tech/" target="_blank" class="cyber-link mt-3 mt-auto">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="min-vh-100 d-flex align-items-center position-relative content-section section-padding py-5" id="skillSection">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-down">Technical <span class="text-purple">Skills</span></h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="glass-panel p-4 p-md-5 rounded-4 text-center" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="skills-grid mt-4">
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-python skill-icon"></i> Python</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-python skill-icon"></i> Node.js</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-python skill-icon"></i> React.js</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-python skill-icon"></i> javaScript</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-python skill-icon"></i> Automation</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="150"><i class="fas fa-database skill-icon"></i> SQL</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-js skill-icon"></i> JavaScript</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="250"><i class="fab fa-html5 skill-icon"></i> HTML5</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-css3-alt skill-icon"></i> CSS3 / Flexbox</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="350"><i class="fas fa-laptop-code skill-icon"></i> FrontEnd Dev</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="400"><i class="fas fa-brain skill-icon"></i> Problem Solving</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-python skill-icon"></i> decision making</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="450"><i class="fas fa-comments skill-icon"></i> Communication</div>
+                            <div class="skill-badge" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-python skill-icon"></i> Fast Learning</div>
+                        </div>
+                        <div class="mt-5" data-aos="fade-up" data-aos-delay="600">
+                            <a href="resume-1.pdf" target="_blank" class="cyber-btn cyber-btn-purple">
+                                <span class="btn-text">Download Resume</span>
+                                <i class="fas fa-file-pdf ml-2 btn-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer class="footer-section position-relative content-section py-5 glass-footer mt-5" id="contactSection">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4 text-center text-md-left mb-4 mb-md-0" data-aos="fade-right">
+                    <img src="myself.png" class="footer-my-img rounded-circle border-cyan mb-3" alt="Niyaz Ahamed" />
+                    <h4 class="text-white font-weight-bold">Niyaz Ahamed</h4>
+                    <p class="text-cyan mb-0">Aspiring Full-Stack Developer</p>
+                </div>
+                
+                <div class="col-12 col-md-4 text-center mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="text-white mb-4 border-bottom border-secondary d-inline-block pb-2">Contact Info</h5>
+                    <ul class="list-unstyled contact-list text-light-gray">
+                        <li class="mb-3"><i class="fas fa-envelope text-cyan mr-2"></i> anuniyaz043@gmail.com</li>
+                        <li class="mb-3"><i class="fas fa-phone-alt text-purple mr-2"></i> +91 8248645640</li>
+                        <li><i class="fas fa-map-marker-alt text-cyan mr-2"></i> Gudalur, The Nilgiris, TN, India</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4 text-center text-md-right" data-aos="fade-left" data-aos-delay="400">
+                    <img src="anime.png" class="footer-thanking-img rounded-circle mb-3 border-purple" alt="Thank You" />
+                    <p class="quote-text font-italic text-sm text-light-gray px-3 px-md-0">
+                        "Grateful for your visit! Your presence fuels my creativity. Come back anytime for more!" 🚀✨
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row mt-5 pt-4 border-top border-dark">
+                <div class="col-12 text-center text-muted">
+                    <p class="mb-0">&copy; 2026 Niyaz Ahamed. Built with passion & massive animations.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery, Popper, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS Scroll Animations
+        AOS.init({
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+            offset: 50, // offset (in px) from the original trigger point
+        });
+
+        // Initialize Global Massive Vanta Network Background
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x07b0f8, // Cyan nodes
+            backgroundColor: 0x050814, // Deep dark space background
+            points: 12.00,
+            maxDistance: 22.00,
+            spacing: 16.00,
+            showDots: true
+        });
+
+        // Smooth scrolling for Nav Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70, // offset for fixed navbar
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add blur effect to navbar on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.glass-nav');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>)
+</script>
+
+</body>
